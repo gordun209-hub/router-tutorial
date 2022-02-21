@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, Outlets } from "react-router-dom";
 import { getInvoices } from "../data";
 
 export const Invoices = () => {
@@ -21,6 +21,7 @@ export const Invoices = () => {
           </Link>
         ))}
       </nav>
+      <Outlets />
     </div>
   );
 };
